@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Profile</title>
+    </head>
+    <body>
+        <p>{{full_name}}</p>
+        <p>{{nickname}}</p>
+        <p>{{email}}</p>
+        <p>{{grade}}</p>
+        <p>{{phones}}</p>
+        <form action="./changed_nickname" method="get">
+            <label for="id_nickname">Set your nickname.</label>
+	        <input type="text" id="id_nickname" name="f_nickname" placeholder="bobby">
+	        <button type="submit" value="Submit">Submit</button>
+        </form>
+    </body>
+</html>

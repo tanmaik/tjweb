@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Weather Form
+    </title>
+  </head>
+  <body>
+    <h3>Where do you want to find the weather?</h3>
+    <form action="./getweather" method="get">
+      <label for="id_long">Latitude?</label>
+      <input type="text" id="id_long" name="lat" placeholder="42" oninvalid="Please fill out this field"/><br />
+
+      <label for="id_lat">Longitude?</label>
+      <input type="text" id="id_lat" name="long" placeholder="-78" oninvalid="Please fill out this field"/><br />
+
+      <button type="submit" value="Submit">Submit</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hourly Forecast </title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+      .text {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+        display: inline-block
+      }
+      img {
+        border-radius: 10%;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    {{#each data}} 
+    <div class="text">
+      <h3>Time: {{this.time}}</h3>
+      <img src={{this.icon}} />
+      <p>Wind Speed: {{this.wind}}</p>
+      <p>Temperature: {{this.temp}}ºF</p>
+    </div>
+      <br>
+    {{/each}}
+  </body>
+</html>

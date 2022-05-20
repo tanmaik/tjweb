@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MadLib form</title>
+</head>
+<body>
+
+<h2>MadLib Form</h2>
+
+<form action="./madlib" method="get">
+	<label for="id_name">What is your first name?</label>
+	<input type="text" id="id_name" name="f_name" placeholder="Your Name"><br>
+
+	<label for="id_city">Where were you born?</label>
+	<input type="text" id="id_city" name="f_birthplace" placeholder="someplace cool"><br>
+	
+	
+	<label for="id_food">What is your favorite food?</label>
+	<input type="text" id="id_food" name="f_food" placeholder="pasta ahem"><br>
+	
+	<label for="id_pet">What is your favorite animal?</label>
+    <select name="f_pet" id="id_pet">
+      <option value="cat">catty potter</option>
+      <option value="dog">doge</option>
+      <option value="fish">ishi the fishy</option>
+      <option value="dragon">Dragon</option>
+    </select>
+    <br>
+    
+	
+    <input type="checkbox" id="cool" name="f_cool" value="cool">
+    <label for="cool"> i am cool</label><br>
+	<br>
+	<br>
+	
+	<button type="submit" value="Submit">Submit</button>
+</form> 
+
+</body>
+</html>

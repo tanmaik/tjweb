@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Who's the GOAT?
+    </title> 
+    <link rel="icon" 
+      type="image/jpeg" 
+      href="http://brandthunder.com/wp/wp-content/uploads/2012/10/NBA-Chrome-Themes-Post.jpeg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+        
+        h3 {
+          text-align: center;
+          font-family: 'Staatliches', cursive;
+          letter-spacing: 1px;
+          font-size: 2rem;
+        }
+        .center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        p {
+            text-align: center;
+            font-family: 'Staatliches', cursive;
+            letter-spacing: 0.5px;
+            font-size: 1.25rem;
+        }
+        .vote {
+            color: red;
+        }
+        a:hover {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class = "center">
+    <h3>
+        Who's the GOAT?
+    </h3>
+    {{#each player_data}}
+        <div style="display: inline-block">
+            <p>{{this.player}}</p>
+            <a href="https://user.tjhsst.edu/2023tkalisip/{{this.player}}"><img src='./img/{{this.player}}.gif' height=200></a>
+            <p>{{this.num_votes}} ↑</p>
+            <p>{{this.percentage}}%</p>
+            <a class='vote' href="https://user.tjhsst.edu/2023tkalisip/nba_voting/{{this.player}}"><p>VOTE</p></a>
+        </div>
+    {{/each}}
+    </div>
+</body>
+</html>
